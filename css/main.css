@@ -1,0 +1,416 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style-type: none;
+}
+
+/* FONTS */
+@font-face {
+     font-family: brandonthin;
+     src: url("../assets/ttf/Brandon_thin.otf");
+}
+@font-face {
+     font-family: Brandongrotesque;
+     src: url("../assets/ttf/Brandon_reg.otf");
+}
+@font-face {
+     font-family:abrilfatface ;
+     src: url("../assets/ttf/AbrilFatface-Regular.ttf");
+}
+
+
+/****************** HEADER *******************/
+
+header{
+     background-color: #294183;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 4rem;
+     max-width: 100%;
+}
+
+.headersdiv{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+}
+.icons2{
+     transition: 0.4s;
+}
+.icons2:hover{
+     transform: scale(1.2);
+     box-shadow: #dce7f7 0px 20px 30px -10px;
+}
+.socialname{
+     margin: 13px 8px 0 8px;
+     font-family: Brandongrotesque;
+     color:white ;
+     font-size: 15px;
+}
+
+/****************** MAIN *******************/
+main{
+     background-color: #dce7f7;
+     padding-bottom: 5rem;
+}
+.mainimg{
+     margin-top: 5rem;
+     width: 100%;
+}
+.sacar3{
+     display: none;
+}
+.maintitle{
+     text-align: center;
+     margin-top: 3rem;
+     margin-bottom: 6rem;
+     font-family: abrilfatface;
+     color: #294183;
+     font-size: 50px;
+}
+/****************** IMAGENES *******************/
+.maindiv{
+     margin: 2rem;
+     display: flex;
+     justify-content: space-around
+}
+.card{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #294183;
+     width: 705px;
+     height: 421px;
+     border-radius: 20px;
+     transition: 0.3s;
+}
+.card:hover{
+     transform: scale(1.1);
+     box-shadow: #072066 10px 30px 30px -5px;
+}
+.card_content{
+     display: flex;
+     flex-direction: column;
+     height: 350px;
+}
+.card_title{
+ display: flex;
+ align-items: center;
+ margin-bottom: 6px;
+ font-size: 17px;
+}
+.card_title-img{
+     width: 25px;
+     height: 25px;
+     margin-right: 8px;
+}
+.card_title-titulo{
+     color: white;
+     font-family: abrilfatface;
+     letter-spacing: 1px;
+}
+.card_lorem{
+     height: 325px;
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     justify-content: space-around;
+     padding-right: 20px;
+}
+.card_parrafo{
+     font-family: brandonthin;
+     color: white;
+     line-height: 117%;
+     font-size: 13px;
+}
+.incluye{
+     color: white;
+     font-family: abrilfatface;
+     letter-spacing: 1px;
+}
+.card_precio{
+     color: white;
+     font-family: abrilfatface;
+     font-size: 25px;
+     letter-spacing: 1px;
+}
+/****************** FOOTER *******************/
+footer{
+     background-color: #294183;
+     display: flex;
+     justify-content: center;
+     padding: 4rem;
+}
+.none{
+     display: none;
+}
+.sacar2{
+     display: none;
+}
+
+/****************** MEDIAS QUERY *******************/
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+     .headersdiv{
+          display: flex;
+          flex-direction: column;
+     }
+     .card{
+          width: 623px;
+          height:400px ;
+     }
+     .card_content{
+          height: 330px;
+          padding-right: 40px;
+     }
+     .card_img{
+          width: 200px;
+     }
+}
+@media only screen and (min-width: 950px) and (max-width: 1399px){
+     .headersdiv{
+          display:none;
+     }
+     footer{
+          justify-content: space-around;
+          align-items: center;
+     }
+     .none{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; 
+     }
+     .maindiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+     }
+     .maintitle{
+          font-size: 40px;
+     }
+     .card{
+          margin-bottom: 50px;
+     }
+}
+@media only screen and (min-width: 768px) and (max-width: 949px){
+
+     .headersdiv{
+          display:none;
+     }
+     .icon{
+          width: 21px;
+     }
+     .socialname{
+          font-size: 12px;
+     }
+     footer{
+          justify-content: space-around;
+          align-items: center;
+     }
+     .footerimg{
+          width: 100px;
+     }
+     .none{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; 
+     }
+     .maindiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+     }
+     .maintitle{
+          font-size: 37px;
+     }
+     .mainimg{
+          display: none;
+     }
+     .sacar3{
+          display: block;
+     }
+     .card{
+          margin-bottom: 50px;
+          width: 550px;
+          height:350px ;
+     }
+     .card_content{
+          height: 280px;
+          padding-right: 40px;
+          padding-right: 13px;
+     }
+     .card_img{
+          width: 200px;
+     }
+     .card_precio{
+          font-size:15px ;
+     }
+     .card_parrafo{
+          font-size: 12px;
+     }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+     .logo{
+          width: 170px;
+     }
+     .headersdiv{
+          display:none;
+     }
+     .icon{
+          width: 21px;
+
+     }
+     .socialname{
+          font-size: 12px;
+          margin: 5px 0 30px 0;
+     }
+     .footerimg{
+          display: none;
+     }
+     .mainimg{
+          display: none;
+     }
+     .sacar3{
+          display: block;
+          width: 100%;
+          padding-top: 2rem;
+     }
+     .sacar{
+          display: none;
+     }
+     .sacar2{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 50px;
+     }
+     .none{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; 
+     }
+     .maindiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+     }
+     .maintitle{
+          font-size: 37px;
+     }
+     .card{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 50px;
+          width: 400px;
+          height:650px ;
+     }
+     .card_content{
+          height: 280px;
+          padding-right: 40px;
+          padding-right: 13px;
+     }
+     .card_img{
+          width: 200px;
+          padding-bottom: 20px;
+     }
+     .card_precio{
+          font-size:15px ;
+     }
+     .card_parrafo{
+          font-size: 12px;
+     }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+     .logo{
+          width: 170px;
+     }
+     .headersdiv{
+          display:none;
+     }
+     .icon{
+          width: 21px;
+
+     }
+     .socialname{
+          font-size: 12px;
+          margin: 5px 0 30px 0;
+     }
+     .footerimg{
+          display: none;
+     }
+     .mainimg{
+          display: none;
+     }
+     .sacar3{
+          display: block;
+          width: 100%;
+          padding-top: 2rem;
+     }
+     .sacar{
+          display: none;
+     }
+     .sacar2{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 50px;
+     }
+     .none{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; 
+     }
+     .maindiv{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+     }
+     .maintitle{
+          font-size: 30px;
+     }
+     .card{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 50px;
+          width: 280px;
+          height:600px ;
+     }
+     .card_lorem{
+          width: auto;
+          padding: 0;
+     }
+     .card_content{
+          height: 280px;
+          padding: 13px;
+     }
+     .card_img{
+          width: 200px;
+          padding-bottom: 20px;
+     }
+     .card_precio{
+          font-size:15px ;
+     }
+     .card_parrafo{
+          font-size: 11px;
+     }
+}
